@@ -1,0 +1,126 @@
+/* Aplicamos box-sizing a todos los elementos. */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Configuración general de la página. */
+body {
+    background: white;
+}
+
+
+/* Estilos del título. */
+h1 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+
+/* Contenedor principal de la calculadora. */
+.calculadora {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+
+/* Pantalla de la calculadora. */
+.pantalla {
+    width: 100%;
+    height: 80px;
+
+    background-color: white;
+    border: 2px solid gray;
+    color: black;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-radius: 10px;
+}
+
+
+/* Texto que aparece dentro de la pantalla. */
+.pantalla p {
+    margin: 0;
+    font-size: 25px;
+}
+
+
+/* Contenedor de los botones. */
+.botones {
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+/* Estilos generales de todos los botones. */
+.botones button {
+    height: 50px;
+
+    font-size: 20px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgb(194, 185, 185);
+
+    padding: 15px;
+}
+
+
+/* Efecto al pasar el cursor sobre un botón. */
+.botones button:hover {
+    background-color: rgb(160, 145, 145);
+}
+
+
+/* Efecto al presionar un botón. */
+.botones button:active {
+    transform: scale(0.95);
+}
+
+
+/* Color de los botones de operaciones. */
+.operacion {
+    background-color: #d9e8ff;
+}
+
+
+/* Color del botón igual. */
+.igual {
+    background-color: #b7e4c7;
+}
+
+
+/* Color del botón borrar. */
+.borrar {
+    background-color: #ffb4b4;
+}
+
+
+/* Color del botón borrar al pasar el cursor. */
+.botones .borrar:hover {
+    background-color: #ce6248;
+}
+
+
+/* Color del botón igual al pasar el cursor. */
+.botones .igual:hover {
+    background-color: #56b35d;
+}
+
+
+/* Color de los botones de operaciones al pasar el cursor. */
+.botones .operacion:hover {
+    background-color: #6780b9;
+}
